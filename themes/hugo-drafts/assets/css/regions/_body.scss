@@ -1,0 +1,25 @@
+body.hg-drafts {
+  @extend .border;
+  @extend .border-primary;
+  @extend .rounded;
+
+  &:before {
+    content: "body";
+    @extend .badge;
+    @extend .badge-primary;
+    @extend .ml-1;
+  }
+}
+
+.body-wrapper.hg-drafts {
+  @extend .border;
+  @extend .border-primary;
+  @extend .rounded;
+
+  &:before {
+    content: "div.body-wrapper";
+    @extend .badge;
+    @extend .badge-primary;
+    @extend .ml-1;
+  }
+}

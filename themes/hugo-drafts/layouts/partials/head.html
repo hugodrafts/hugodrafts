@@ -1,0 +1,4 @@
+<head>
+  {{ $css := resources.Get "css/style.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+</head>

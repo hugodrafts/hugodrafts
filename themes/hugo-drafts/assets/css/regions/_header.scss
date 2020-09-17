@@ -1,0 +1,28 @@
+.page-header-wrapper.hg-drafts {
+  @extend .border;
+  @extend .border-danger;
+  @extend .rounded;
+
+  &:before {
+    content: "div.page-header-wrapper";
+    @extend .badge;
+    @extend .badge-danger;
+    @extend .ml-1;
+  }
+}
+
+header.page-header {
+  @extend .container;
+
+  &.hg-drafts {
+    @extend .border;
+    @extend .border-danger;
+    @extend .rounded;
+
+    &:before {
+      content: "header.page-header";
+      @extend .badge;
+      @extend .badge-danger;
+    }
+  }
+}

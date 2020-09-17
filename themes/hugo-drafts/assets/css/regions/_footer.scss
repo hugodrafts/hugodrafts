@@ -1,0 +1,64 @@
+.page-footer-wrapper.hg-drafts {
+  @extend .border;
+  @extend .border-danger;
+  @extend .rounded;
+
+  &:before {
+    content: "div.page-footer-wrapper";
+    @extend .badge;
+    @extend .badge-danger;
+    @extend .ml-1;
+  }
+}
+
+footer.page-footer {
+  @extend .container;
+  @extend .d-flex;
+
+  &.hg-drafts {
+    @extend .border;
+    @extend .border-danger;
+    @extend .rounded;
+
+    &:before {
+      content: "footer.page-footer";
+      position: absolute;
+      @extend .badge;
+      @extend .badge-danger;
+    }
+  }
+}
+
+.page-footer-block {
+  @extend .flex-grow-1;
+
+  &.hg-drafts {
+    @extend .border;
+    @extend .border-danger;
+    @extend .rounded;
+    @extend .mt-4;
+    
+    &:before {
+      content: "div.page-footer-block";
+      @extend .ml-1;
+      @extend .badge;
+      @extend .badge-danger;
+    }
+  }
+}
+
+div.page-copyright {
+  @extend .container;
+
+  &.hg-drafts {
+    @extend .border;
+    @extend .border-danger;
+    @extend .rounded;
+
+    &:before {
+      content: "div.page-copyright";
+      @extend .badge;
+      @extend .badge-danger;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+
+  <body class="hg-drafts">
+    <div class="body-wrapper hg-drafts">
+      {{- partial "header.html" . -}}
+  
+      <div id="content">
+      {{- block "main" . }}{{- end }}
+      </div>
+  
+      {{- partial "footer.html" . -}}
+    </div>
+  </body>
+</html>
